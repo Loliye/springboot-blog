@@ -1,0 +1,1243 @@
+2019-07-24 08:21:01.846 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-24 08:21:01.859 [http-nio-8081-exec-1] ERROR blog.controller.GlobalExceptionHandler - find exception message:Could not find result map blog.dto.MetaDto
+2019-07-24 08:21:41.543 [http-nio-8081-exec-2] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-24 08:21:41.544 [http-nio-8081-exec-2] ERROR blog.controller.GlobalExceptionHandler - find exception message:Could not find result map blog.dto.MetaDto
+2019-07-24 08:22:04.786 [http-nio-8081-exec-1] ERROR blog.controller.admin.AuthController - 登入失败
+org.apache.ibatis.builder.IncompleteElementException: Could not find result map blog.dto.MetaDto
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:775) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:745) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:740) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:217) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.2.jar:3.4.2]
+	at com.sun.proxy.$Proxy98.countByExample(Unknown Source) ~[?:?]
+	at blog.service.impl.UserServiceImpl.login(UserServiceImpl.java:51) ~[classes/:?]
+	at blog.controller.admin.AuthController.doLogin(AuthController.java:52) ~[classes/:?]
+	at blog.controller.admin.AuthController$$FastClassBySpringCGLIB$$7df818c9.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at blog.controller.admin.AuthController$$EnhancerBySpringCGLIB$$8ffdd5fb.doLogin(<generated>) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_192]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_192]
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for blog.dto.MetaDto
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:875) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:627) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344) ~[mybatis-3.4.2.jar:3.4.2]
+	... 81 more
+2019-07-24 08:22:12.048 [http-nio-8081-exec-3] ERROR blog.controller.admin.AuthController - 登入失败
+org.apache.ibatis.builder.IncompleteElementException: Could not find result map blog.dto.MetaDto
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:775) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:745) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:740) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:217) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.2.jar:3.4.2]
+	at com.sun.proxy.$Proxy98.countByExample(Unknown Source) ~[?:?]
+	at blog.service.impl.UserServiceImpl.login(UserServiceImpl.java:51) ~[classes/:?]
+	at blog.controller.admin.AuthController.doLogin(AuthController.java:52) ~[classes/:?]
+	at blog.controller.admin.AuthController$$FastClassBySpringCGLIB$$7df818c9.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at blog.controller.admin.AuthController$$EnhancerBySpringCGLIB$$8ffdd5fb.doLogin(<generated>) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_192]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_192]
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for blog.dto.MetaDto
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:875) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:627) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344) ~[mybatis-3.4.2.jar:3.4.2]
+	... 81 more
+2019-07-24 08:23:38.902 [http-nio-8081-exec-5] ERROR blog.controller.admin.AuthController - 登入失败
+org.apache.ibatis.builder.IncompleteElementException: Could not find result map blog.dto.MetaDto
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:775) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:745) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:740) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:217) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.2.jar:3.4.2]
+	at com.sun.proxy.$Proxy98.countByExample(Unknown Source) ~[?:?]
+	at blog.service.impl.UserServiceImpl.login(UserServiceImpl.java:51) ~[classes/:?]
+	at blog.controller.admin.AuthController.doLogin(AuthController.java:52) ~[classes/:?]
+	at blog.controller.admin.AuthController$$FastClassBySpringCGLIB$$7df818c9.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at blog.controller.admin.AuthController$$EnhancerBySpringCGLIB$$8ffdd5fb.doLogin(<generated>) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_192]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_192]
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for blog.dto.MetaDto
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:875) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:627) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344) ~[mybatis-3.4.2.jar:3.4.2]
+	... 81 more
+2019-07-24 08:30:53.174 [http-nio-8081-exec-5] ERROR blog.controller.admin.AuthController - 登入失败
+org.apache.ibatis.builder.IncompleteElementException: Could not find result map blog.dto.MetaDto
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:775) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:745) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:740) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:217) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.2.jar:3.4.2]
+	at com.sun.proxy.$Proxy98.countByExample(Unknown Source) ~[?:?]
+	at blog.service.impl.UserServiceImpl.login(UserServiceImpl.java:52) ~[classes/:?]
+	at blog.controller.admin.AuthController.doLogin(AuthController.java:55) ~[classes/:?]
+	at blog.controller.admin.AuthController$$FastClassBySpringCGLIB$$7df818c9.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at blog.controller.admin.AuthController$$EnhancerBySpringCGLIB$$3bd53e3a.doLogin(<generated>) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_192]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_192]
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for blog.dto.MetaDto
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:875) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:627) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344) ~[mybatis-3.4.2.jar:3.4.2]
+	... 81 more
+2019-07-24 08:31:32.834 [http-nio-8081-exec-6] ERROR blog.controller.admin.AuthController - 登入失败
+org.apache.ibatis.builder.IncompleteElementException: Could not find result map blog.dto.MetaDto
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:775) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:745) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:740) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:217) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.2.jar:3.4.2]
+	at com.sun.proxy.$Proxy98.countByExample(Unknown Source) ~[?:?]
+	at blog.service.impl.UserServiceImpl.login(UserServiceImpl.java:52) ~[classes/:?]
+	at blog.controller.admin.AuthController.doLogin(AuthController.java:55) ~[classes/:?]
+	at blog.controller.admin.AuthController$$FastClassBySpringCGLIB$$7df818c9.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at blog.controller.admin.AuthController$$EnhancerBySpringCGLIB$$3bd53e3a.doLogin(<generated>) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_192]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_192]
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for blog.dto.MetaDto
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:875) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:627) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344) ~[mybatis-3.4.2.jar:3.4.2]
+	... 81 more
+2019-07-24 08:31:34.984 [http-nio-8081-exec-7] ERROR blog.controller.admin.AuthController - 登入失败
+org.apache.ibatis.builder.IncompleteElementException: Could not find result map blog.dto.MetaDto
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:775) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:745) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:740) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:217) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.2.jar:3.4.2]
+	at com.sun.proxy.$Proxy98.countByExample(Unknown Source) ~[?:?]
+	at blog.service.impl.UserServiceImpl.login(UserServiceImpl.java:52) ~[classes/:?]
+	at blog.controller.admin.AuthController.doLogin(AuthController.java:55) ~[classes/:?]
+	at blog.controller.admin.AuthController$$FastClassBySpringCGLIB$$7df818c9.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at blog.controller.admin.AuthController$$EnhancerBySpringCGLIB$$3bd53e3a.doLogin(<generated>) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_192]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_192]
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for blog.dto.MetaDto
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:875) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:627) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344) ~[mybatis-3.4.2.jar:3.4.2]
+	... 81 more
+2019-07-24 08:36:28.671 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-24 08:36:28.682 [http-nio-8081-exec-1] ERROR blog.controller.GlobalExceptionHandler - find exception message:Could not find result map blog.dto.MetaDto
+2019-07-24 08:36:37.612 [http-nio-8081-exec-7] ERROR blog.controller.admin.AuthController - 登入失败
+org.apache.ibatis.builder.IncompleteElementException: Could not find result map blog.dto.MetaDto
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:775) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:745) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:740) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:217) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.2.jar:3.4.2]
+	at com.sun.proxy.$Proxy98.countByExample(Unknown Source) ~[?:?]
+	at blog.service.impl.UserServiceImpl.login(UserServiceImpl.java:52) ~[classes/:?]
+	at blog.controller.admin.AuthController.doLogin(AuthController.java:55) ~[classes/:?]
+	at blog.controller.admin.AuthController$$FastClassBySpringCGLIB$$7df818c9.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at blog.controller.admin.AuthController$$EnhancerBySpringCGLIB$$25171c2.doLogin(<generated>) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_192]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_192]
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for blog.dto.MetaDto
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:875) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:627) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344) ~[mybatis-3.4.2.jar:3.4.2]
+	... 81 more
+2019-07-24 08:37:06.638 [http-nio-8081-exec-8] ERROR blog.controller.admin.AuthController - 登入失败
+org.apache.ibatis.builder.IncompleteElementException: Could not find result map blog.dto.MetaDto
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:775) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:745) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:740) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:217) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.2.jar:3.4.2]
+	at com.sun.proxy.$Proxy98.countByExample(Unknown Source) ~[?:?]
+	at blog.service.impl.UserServiceImpl.login(UserServiceImpl.java:52) ~[classes/:?]
+	at blog.controller.admin.AuthController.doLogin(AuthController.java:55) ~[classes/:?]
+	at blog.controller.admin.AuthController$$FastClassBySpringCGLIB$$7df818c9.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at blog.controller.admin.AuthController$$EnhancerBySpringCGLIB$$25171c2.doLogin(<generated>) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_192]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_192]
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for blog.dto.MetaDto
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:875) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:627) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344) ~[mybatis-3.4.2.jar:3.4.2]
+	... 81 more
+2019-07-24 08:37:59.790 [http-nio-8081-exec-4] ERROR blog.controller.admin.AuthController - 登入失败
+org.apache.ibatis.builder.IncompleteElementException: Could not find result map blog.dto.MetaDto
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:775) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:745) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:740) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:217) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.2.jar:3.4.2]
+	at com.sun.proxy.$Proxy98.countByExample(Unknown Source) ~[?:?]
+	at blog.service.impl.UserServiceImpl.login(UserServiceImpl.java:52) ~[classes/:?]
+	at blog.controller.admin.AuthController.doLogin(AuthController.java:55) ~[classes/:?]
+	at blog.controller.admin.AuthController$$FastClassBySpringCGLIB$$7df818c9.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at blog.controller.admin.AuthController$$EnhancerBySpringCGLIB$$25171c2.doLogin(<generated>) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_192]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_192]
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for blog.dto.MetaDto
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:875) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:627) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344) ~[mybatis-3.4.2.jar:3.4.2]
+	... 81 more
+2019-07-24 08:47:22.672 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-24 08:47:22.683 [http-nio-8081-exec-1] ERROR blog.controller.GlobalExceptionHandler - find exception message:Could not find result map blog.dto.MetaDto
+2019-07-24 08:49:19.374 [http-nio-8081-exec-4] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-24 08:49:19.376 [http-nio-8081-exec-4] ERROR blog.controller.GlobalExceptionHandler - find exception message:Could not find result map blog.dto.MetaDto
+2019-07-24 08:49:28.548 [http-nio-8081-exec-9] ERROR blog.controller.admin.AuthController - 登入失败
+org.apache.ibatis.builder.IncompleteElementException: Could not find result map blog.dto.MetaDto
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:775) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:745) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:740) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:217) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:48) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:65) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.4.2.jar:3.4.2]
+	at com.sun.proxy.$Proxy98.countByExample(Unknown Source) ~[?:?]
+	at blog.service.impl.UserServiceImpl.login(UserServiceImpl.java:52) ~[classes/:?]
+	at blog.controller.admin.AuthController.doLogin(AuthController.java:56) ~[classes/:?]
+	at blog.controller.admin.AuthController$$FastClassBySpringCGLIB$$7df818c9.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at blog.controller.admin.AuthController$$EnhancerBySpringCGLIB$$98347b98.doLogin(<generated>) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_192]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_192]
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for blog.dto.MetaDto
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:875) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:627) ~[mybatis-3.4.2.jar:3.4.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344) ~[mybatis-3.4.2.jar:3.4.2]
+	... 81 more
+2019-07-24 08:54:34.604 [http-nio-8081-exec-3] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-24 08:54:35.026 [http-nio-8081-exec-3] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-07-24 08:54:49.499 [http-nio-8081-exec-1] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-24 08:54:49.499 [http-nio-8081-exec-1] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-24 08:54:49.621 [http-nio-8081-exec-1] ERROR blog.controller.GlobalExceptionHandler - find exception message:
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+### The error may exist in file [E:\c or c++\java\Springboot_blog\target\classes\mapper\CommentVoMapper.xml]
+### The error may involve blog.dao.CommentVoMapper.selectByExampleWithBLOBs-Inline
+### The error occurred while setting parameters
+### SQL: select count(0) from (select                         coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status,      parent             ,               content             from t_comments                                                                          order by create desc) tmp_count
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+2019-07-24 08:58:05.669 [http-nio-8081-exec-5] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-24 08:58:05.669 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-24 08:58:05.716 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-24 08:58:05.716 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-24 08:58:05.727 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-24 08:58:05.727 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-24 08:58:05.777 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-24 08:58:05.777 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-24 08:58:05.785 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-24 08:59:05.712 [http-nio-8081-exec-8] ERROR blog.controller.GlobalExceptionHandler - find exception message:
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+### The error may exist in file [E:\c or c++\java\Springboot_blog\target\classes\mapper\ContentVoMapper.xml]
+### The error may involve blog.dao.ContentVoMapper.selectByExampleWithBLOBs-Inline
+### The error occurred while setting parameters
+### SQL: select count(0) from (select                         cid, title, slug, created, modified, author_id, type, status, tags, categories, hits,      comments_num, allow_comment, allow_ping, allow_feed             ,               content             from t_contents                                  WHERE (  type = ? )                                        order by create desc) tmp_count
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+2019-07-24 10:47:34.372 [http-nio-8081-exec-7] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-24 10:47:34.372 [http-nio-8081-exec-7] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-24 10:47:34.381 [http-nio-8081-exec-7] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-24 10:47:34.381 [http-nio-8081-exec-7] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-24 10:47:34.386 [http-nio-8081-exec-7] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-24 10:47:34.386 [http-nio-8081-exec-7] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-24 10:47:34.394 [http-nio-8081-exec-7] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-24 10:47:34.394 [http-nio-8081-exec-7] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-24 10:47:34.400 [http-nio-8081-exec-7] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-24 10:56:24.318 [http-nio-8081-exec-3] ERROR blog.controller.GlobalExceptionHandler - find exception message:
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+### The error may exist in file [E:\c or c++\java\Springboot_blog\target\classes\mapper\ContentVoMapper.xml]
+### The error may involve blog.dao.ContentVoMapper.selectByExampleWithBLOBs-Inline
+### The error occurred while setting parameters
+### SQL: select count(0) from (select                         cid, title, slug, created, modified, author_id, type, status, tags, categories, hits,      comments_num, allow_comment, allow_ping, allow_feed             ,               content             from t_contents                                  WHERE (  type = ? )                                        order by create desc) tmp_count
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+2019-07-24 10:56:36.691 [http-nio-8081-exec-7] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-24 10:56:36.708 [http-nio-8081-exec-7] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-07-24 10:56:51.886 [http-nio-8081-exec-6] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-24 10:56:51.886 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-24 10:56:51.894 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-24 10:56:51.894 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-24 10:56:51.900 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-24 10:56:51.900 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-24 10:56:51.908 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-24 10:56:51.908 [http-nio-8081-exec-6] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-24 10:56:51.913 [http-nio-8081-exec-6] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-24 10:56:53.854 [http-nio-8081-exec-2] ERROR blog.controller.GlobalExceptionHandler - find exception message:
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+### The error may exist in file [E:\c or c++\java\Springboot_blog\target\classes\mapper\ContentVoMapper.xml]
+### The error may involve blog.dao.ContentVoMapper.selectByExampleWithBLOBs-Inline
+### The error occurred while setting parameters
+### SQL: select count(0) from (select                         cid, title, slug, created, modified, author_id, type, status, tags, categories, hits,      comments_num, allow_comment, allow_ping, allow_feed             ,               content             from t_contents                                  WHERE (  type = ? )                                        order by create desc) tmp_count
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+2019-07-24 11:06:44.752 [http-nio-8081-exec-6] ERROR blog.controller.GlobalExceptionHandler - find exception message:
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+### The error may exist in file [E:\c or c++\java\Springboot_blog\target\classes\mapper\ContentVoMapper.xml]
+### The error may involve blog.dao.ContentVoMapper.selectByExampleWithBLOBs-Inline
+### The error occurred while setting parameters
+### SQL: select count(0) from (select                         cid, title, slug, created, modified, author_id, type, status, tags, categories, hits,      comments_num, allow_comment, allow_ping, allow_feed             ,               content             from t_contents                                  WHERE (  type = ? )                                        order by create desc) tmp_count
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+2019-07-24 11:07:13.655 [http-nio-8081-exec-5] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-24 11:07:13.656 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-24 11:07:13.718 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-24 11:07:13.718 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-24 11:07:13.731 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-24 11:07:13.732 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-24 11:07:13.749 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-24 11:07:13.749 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-24 11:07:13.759 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-24 11:07:15.600 [http-nio-8081-exec-6] ERROR blog.controller.GlobalExceptionHandler - find exception message:
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+### The error may exist in file [E:\c or c++\java\Springboot_blog\target\classes\mapper\ContentVoMapper.xml]
+### The error may involve blog.dao.ContentVoMapper.selectByExampleWithBLOBs-Inline
+### The error occurred while setting parameters
+### SQL: select count(0) from (select                         cid, title, slug, created, modified, author_id, type, status, tags, categories, hits,      comments_num, allow_comment, allow_ping, allow_feed             ,               content             from t_contents                                  WHERE (  type = ? )                                        order by create desc) tmp_count
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create desc) tmp_count' at line 18
+2019-07-24 11:09:41.372 [http-nio-8081-exec-5] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-24 11:09:41.373 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-24 11:09:41.426 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-24 11:09:41.426 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-24 11:09:41.439 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-24 11:09:41.440 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-24 11:09:41.458 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-24 11:09:41.458 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-24 11:09:41.468 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-24 11:09:46.872 [http-nio-8081-exec-9] ERROR blog.controller.GlobalExceptionHandler - find exception message:Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "!"
+2019-07-24 11:16:18.426 [http-nio-8081-exec-5] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-24 11:16:18.427 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-24 11:16:18.480 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-24 11:16:18.480 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-24 11:16:18.493 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-24 11:16:18.493 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-24 11:16:18.510 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-24 11:16:18.510 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-24 11:16:18.519 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-24 11:17:41.145 [http-nio-8081-exec-5] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-24 11:17:41.145 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-24 11:17:41.198 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-24 11:17:41.198 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-24 11:17:41.213 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-24 11:17:41.213 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-24 11:17:41.231 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-24 11:17:41.231 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-24 11:17:41.240 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-24 11:22:01.412 [http-nio-8081-exec-5] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-24 11:22:01.412 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-24 11:22:01.459 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-24 11:22:01.459 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-24 11:22:01.470 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-24 11:22:01.470 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-24 11:22:01.488 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-24 11:22:01.488 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-24 11:22:01.497 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-24 11:22:13.929 [http-nio-8081-exec-10] ERROR blog.controller.GlobalExceptionHandler - find exception message:nested exception is org.apache.ibatis.reflection.ReflectionException: Could not set property 'id' of 'class blog.model.Bo.ArchiveBo' with value '10' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'id' in 'class blog.model.Bo.ArchiveBo'
+2019-07-24 11:23:09.312 [http-nio-8081-exec-2] ERROR blog.controller.GlobalExceptionHandler - find exception message:nested exception is org.apache.ibatis.reflection.ReflectionException: Could not set property 'id' of 'class blog.model.Bo.ArchiveBo' with value '10' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'id' in 'class blog.model.Bo.ArchiveBo'
+2019-07-24 11:26:17.104 [http-nio-8081-exec-5] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-24 11:26:17.104 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-24 11:26:17.155 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-24 11:26:17.155 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-24 11:26:17.168 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-24 11:26:17.168 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-24 11:26:17.184 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-24 11:26:17.185 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-24 11:26:17.227 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-24 11:27:48.942 [http-nio-8081-exec-7] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-24 11:27:48.942 [http-nio-8081-exec-7] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-24 11:27:48.949 [http-nio-8081-exec-7] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-24 11:27:48.949 [http-nio-8081-exec-7] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-24 11:27:48.953 [http-nio-8081-exec-7] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-24 11:27:48.953 [http-nio-8081-exec-7] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-24 11:27:48.962 [http-nio-8081-exec-7] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-24 11:27:48.962 [http-nio-8081-exec-7] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-24 11:27:48.967 [http-nio-8081-exec-7] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-24 11:28:26.965 [http-nio-8081-exec-5] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-24 11:28:26.965 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-24 11:28:27.018 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-24 11:28:27.018 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-24 11:28:27.030 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-24 11:28:27.030 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-24 11:28:27.048 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-24 11:28:27.048 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-24 11:28:27.057 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-24 11:30:37.200 [http-nio-8081-exec-6] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-24 11:30:37.200 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-24 11:30:37.247 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-24 11:30:37.247 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-24 11:30:37.259 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-24 11:30:37.259 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-24 11:30:37.275 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-24 11:30:37.275 [http-nio-8081-exec-6] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-24 11:30:37.284 [http-nio-8081-exec-6] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-24 11:35:08.677 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-24 11:35:08.713 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-07-24 11:35:13.770 [http-nio-8081-exec-10] ERROR blog.controller.GlobalExceptionHandler - find exception message:Handler dispatch failed; nested exception is java.lang.StackOverflowError
+2019-07-24 11:35:19.755 [http-nio-8081-exec-8] ERROR blog.controller.GlobalExceptionHandler - find exception message:Handler dispatch failed; nested exception is java.lang.StackOverflowError
+2019-07-24 12:35:52.964 [http-nio-8081-exec-2] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-24 12:35:52.996 [http-nio-8081-exec-2] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-07-25 08:19:30.254 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-25 08:19:32.187 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-07-25 08:19:40.668 [http-nio-8081-exec-10] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-25 08:19:40.690 [http-nio-8081-exec-10] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-07-25 08:19:54.948 [http-nio-8081-exec-2] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-25 08:19:54.965 [http-nio-8081-exec-2] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-07-25 08:20:20.869 [http-nio-8081-exec-6] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-25 08:20:20.869 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-25 08:20:20.920 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-25 08:20:20.920 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-25 08:20:20.928 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-25 08:20:20.928 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-25 08:20:21.003 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-25 08:20:21.003 [http-nio-8081-exec-6] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-25 08:20:21.013 [http-nio-8081-exec-6] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-25 08:21:49.103 [http-nio-8081-exec-5] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-25 08:21:49.103 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-25 08:21:49.174 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-25 08:21:49.174 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-25 08:21:49.203 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-25 08:21:49.203 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-25 08:21:49.250 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-25 08:21:49.250 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-25 08:21:49.272 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-25 08:22:01.811 [http-nio-8081-exec-5] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-25 08:22:01.811 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-25 08:22:01.817 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-25 08:22:01.817 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-25 08:22:01.824 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-25 08:22:01.824 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-25 08:22:01.832 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-25 08:22:01.832 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-25 08:22:01.837 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-26 22:00:34.408 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-26 22:00:35.926 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-07-26 22:02:09.994 [http-nio-8081-exec-7] ERROR blog.controller.GlobalExceptionHandler - find exception message:query content by id and return is not one
+2019-07-26 22:03:02.826 [http-nio-8081-exec-4] ERROR blog.controller.GlobalExceptionHandler - find exception message:query content by id and return is not one
+2019-07-30 22:24:30.856 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-30 22:24:32.245 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-07-30 22:24:48.505 [http-nio-8081-exec-7] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-30 22:24:48.505 [http-nio-8081-exec-7] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-30 22:24:48.553 [http-nio-8081-exec-7] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-30 22:24:48.553 [http-nio-8081-exec-7] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-30 22:24:48.559 [http-nio-8081-exec-7] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-30 22:24:48.559 [http-nio-8081-exec-7] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-30 22:24:48.610 [http-nio-8081-exec-7] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-30 22:24:48.610 [http-nio-8081-exec-7] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-30 22:24:48.620 [http-nio-8081-exec-7] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-30 22:27:08.319 [http-nio-8081-exec-3] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-30 22:27:08.340 [http-nio-8081-exec-3] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-07-30 22:27:16.623 [http-nio-8081-exec-10] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-30 22:27:16.623 [http-nio-8081-exec-10] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-30 22:27:16.632 [http-nio-8081-exec-10] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-30 22:27:16.632 [http-nio-8081-exec-10] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-30 22:27:16.636 [http-nio-8081-exec-10] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-30 22:27:16.636 [http-nio-8081-exec-10] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-30 22:27:16.647 [http-nio-8081-exec-10] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-30 22:27:16.647 [http-nio-8081-exec-10] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-30 22:27:16.653 [http-nio-8081-exec-10] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-30 22:27:54.445 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-30 22:27:55.436 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-07-30 22:28:09.455 [http-nio-8081-exec-5] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-30 22:28:09.455 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-30 22:28:09.472 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-30 22:28:09.472 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-30 22:28:09.478 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-30 22:28:09.478 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-30 22:28:09.498 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-30 22:28:09.498 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-30 22:28:09.508 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-30 22:34:31.876 [http-nio-8081-exec-5] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-30 22:34:31.877 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-30 22:34:31.938 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-30 22:34:31.938 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-30 22:34:31.953 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-30 22:34:31.953 [http-nio-8081-exec-5] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-30 22:34:31.974 [http-nio-8081-exec-5] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-30 22:34:31.974 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-30 22:34:31.984 [http-nio-8081-exec-5] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-30 22:39:15.220 [http-nio-8081-exec-9] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-30 22:39:15.220 [http-nio-8081-exec-9] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-30 22:39:15.277 [http-nio-8081-exec-9] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-30 22:39:15.277 [http-nio-8081-exec-9] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-30 22:39:15.291 [http-nio-8081-exec-9] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-30 22:39:15.291 [http-nio-8081-exec-9] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-30 22:39:15.311 [http-nio-8081-exec-9] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-30 22:39:15.311 [http-nio-8081-exec-9] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-30 22:39:15.321 [http-nio-8081-exec-9] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-30 22:47:25.607 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-30 22:47:26.596 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-07-30 22:47:39.927 [http-nio-8081-exec-6] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-30 22:47:39.927 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-30 22:47:39.947 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-30 22:47:39.947 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-30 22:47:39.953 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-30 22:47:39.953 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-30 22:47:39.971 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-30 22:47:39.971 [http-nio-8081-exec-6] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-30 22:47:39.981 [http-nio-8081-exec-6] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-07-30 22:47:53.602 [http-nio-8081-exec-10] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-30 22:47:53.623 [http-nio-8081-exec-10] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-07-31 19:39:28.937 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-07-31 19:39:30.657 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-07-31 19:39:54.737 [http-nio-8081-exec-7] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-07-31 19:39:54.737 [http-nio-8081-exec-7] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-07-31 19:39:55.031 [http-nio-8081-exec-7] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-07-31 19:39:55.031 [http-nio-8081-exec-7] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-07-31 19:39:55.037 [http-nio-8081-exec-7] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-07-31 19:39:55.037 [http-nio-8081-exec-7] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-07-31 19:39:55.075 [http-nio-8081-exec-7] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-07-31 19:39:55.075 [http-nio-8081-exec-7] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-07-31 19:39:55.084 [http-nio-8081-exec-7] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-08-02 09:17:36.987 [http-nio-8081-exec-2] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-08-02 09:17:38.337 [http-nio-8081-exec-2] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-08-02 09:17:47.166 [http-nio-8081-exec-10] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-08-02 09:17:47.188 [http-nio-8081-exec-10] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-08-02 09:17:54.708 [http-nio-8081-exec-4] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-08-02 09:17:54.708 [http-nio-8081-exec-4] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-08-02 09:17:54.751 [http-nio-8081-exec-4] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-08-02 09:17:54.751 [http-nio-8081-exec-4] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-08-02 09:17:54.755 [http-nio-8081-exec-4] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-08-02 09:17:54.755 [http-nio-8081-exec-4] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-08-02 09:17:54.791 [http-nio-8081-exec-4] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-08-02 09:17:54.791 [http-nio-8081-exec-4] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-08-02 09:17:54.801 [http-nio-8081-exec-4] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-08-02 09:19:34.722 [http-nio-8081-exec-1] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-08-02 09:19:34.722 [http-nio-8081-exec-1] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-08-02 09:19:34.726 [http-nio-8081-exec-1] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-08-02 09:19:34.727 [http-nio-8081-exec-1] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-08-02 09:19:34.730 [http-nio-8081-exec-1] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-08-02 09:19:34.730 [http-nio-8081-exec-1] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-08-02 09:19:34.739 [http-nio-8081-exec-1] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-08-02 09:19:34.739 [http-nio-8081-exec-1] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-08-02 09:19:34.742 [http-nio-8081-exec-1] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-08-02 15:51:23.979 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-08-02 15:51:25.431 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-08-02 15:51:36.589 [http-nio-8081-exec-7] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-08-02 15:51:36.621 [http-nio-8081-exec-7] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-08-02 15:52:01.498 [http-nio-8081-exec-10] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-08-02 15:52:01.522 [http-nio-8081-exec-10] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-08-02 15:52:14.943 [http-nio-8081-exec-6] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-08-02 15:52:14.943 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-08-02 15:52:14.968 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-08-02 15:52:14.968 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-08-02 15:52:14.974 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-08-02 15:52:14.974 [http-nio-8081-exec-6] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-08-02 15:52:15.005 [http-nio-8081-exec-6] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-08-02 15:52:15.005 [http-nio-8081-exec-6] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-08-02 15:52:15.012 [http-nio-8081-exec-6] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-08-02 15:52:42.892 [http-nio-8081-exec-9] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-08-02 15:52:42.892 [http-nio-8081-exec-9] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-08-02 15:52:42.898 [http-nio-8081-exec-9] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-08-02 15:52:42.898 [http-nio-8081-exec-9] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-08-02 15:52:42.902 [http-nio-8081-exec-9] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-08-02 15:52:42.902 [http-nio-8081-exec-9] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-08-02 15:52:42.913 [http-nio-8081-exec-9] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-08-02 15:52:42.913 [http-nio-8081-exec-9] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-08-02 15:52:42.917 [http-nio-8081-exec-9] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
+2019-08-23 21:00:21.277 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-08-23 21:00:23.440 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-08-23 21:00:30.577 [http-nio-8081-exec-3] ERROR blog.controller.GlobalExceptionHandler - find exception message:query content by id and return is not one
+2019-09-04 20:07:49.305 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Enter getContents method
+2019-09-04 20:07:50.758 [http-nio-8081-exec-1] DEBUG blog.service.impl.ContentServiceImpl - Exit getContents method
+2019-09-04 20:08:35.034 [http-nio-8081-exec-10] INFO  blog.controller.admin.IndexController - Enter admin index method
+2019-09-04 20:08:35.034 [http-nio-8081-exec-10] INFO  blog.service.impl.SiteServiceImpl - Enter recentComments method:limit=5
+2019-09-04 20:08:35.070 [http-nio-8081-exec-10] INFO  blog.service.impl.SiteServiceImpl - Exit recentComments method
+2019-09-04 20:08:35.070 [http-nio-8081-exec-10] DEBUG blog.service.impl.SiteServiceImpl - Enter recentContent method
+2019-09-04 20:08:35.082 [http-nio-8081-exec-10] DEBUG blog.service.impl.SiteServiceImpl - Exit recentContents method
+2019-09-04 20:08:35.082 [http-nio-8081-exec-10] INFO  blog.service.impl.SiteServiceImpl - Enter getStatistics method
+2019-09-04 20:08:35.142 [http-nio-8081-exec-10] DEBUG blog.service.impl.SiteServiceImpl - Exit getStatistics method
+2019-09-04 20:08:35.142 [http-nio-8081-exec-10] DEBUG blog.service.impl.LogServiceImpl - Entry getLogs method:page=1,limit=5
+2019-09-04 20:08:35.152 [http-nio-8081-exec-10] DEBUG blog.service.impl.LogServiceImpl - Exit getLogs method.
